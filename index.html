@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Рецепты</h1>
+        <input type="text" id="name" placeholder="Название">
+        <input type="text" id="ingredients" placeholder="Ингридиенты">
+        <input type="text" id="manual" placeholder="Инструкция">
+        <input type="text" id="category" placeholder="Категория">
+        <button id="btn_add" onclick="add_reception()">Добавить рецепт</button>
+        <div class="search_div_name">
+            <input type="text" id="search_name" placeholder="🔍">
+            <button id="btn_search" onclick="get_reception_name()">Найти рецепт</button>
+        </div>
+        <div class="search_div_category">
+            <input type="text" id="search_category" placeholder="#">
+            <button id="btn_filter" onclick="get_reception_category()">Фильтровать по категориям</button>
+        </div>
+        <span></span>
+        <button id="btn_all" onclick="swou_recipe()">Показать все рецепты</button>
+        <span></span>
+        <p id="result"></p>
+    </div> 
+</body>
+
+</html>
